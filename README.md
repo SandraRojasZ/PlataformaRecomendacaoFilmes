@@ -60,7 +60,7 @@ Usuários podem buscar filmes cadastrados no sistema utilizando os seguintes cri
 ### Instalação
 
 1. Clone o repositório:
-  git clone [https://github.com/SandraRojasZ/PlataformaRecomendacaoFilmes.git]
+  git clone https://github.com/SandraRojasZ/PlataformaRecomendacaoFilmes.git
 
 2. Navegue até o diretório do projeto: cd sua-plataforma
 
@@ -88,6 +88,30 @@ Usuários podem buscar filmes cadastrados no sistema utilizando os seguintes cri
 3. Faça commit de suas alterações (`git commit -m 'Add some AmazingFeature'`)
 4. Faça push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
+
+## Verificar Novas Pastas e Arquivos
+1. Abra o terminal e navegue até o repositório clonado:
+  - cd /caminho/para/o/repositorio
+  - Exemplo: cd PlataformaRecomendacaoFilmes/
+3. Use o comando 'git status' para ver as novas pastas e arquivos:
+  - git status   
+  Este comando mostra as mudanças feitas no diretório de trabalho e no índice, incluindo novos arquivos e pastas que ainda não foram adicionados ao controle de versão.
+
+## Adicionar, Commitar e Enviar para o GitHub
+1. Adicionar novos arquivos e pastas ao índice:
+  - git add .   
+O ponto (.) adiciona todos os arquivos modificados e novos. Se quiser adicionar arquivos específicos, você pode especificar o caminho para esses arquivos.
+
+2. Commitar as mudanças:
+ - git commit -m "Mensagem descritiva sobre as mudanças"
+ - Exemplo: git commit -m "Adição dos arquivos para a Login e Cadastro"
+
+3. Enviar as mudanças para o GitHub:
+ - git push origin nome-da-branch
+ - Exemplo: git push origin main
+ - Certifique-se de substituir nome-da-branch pelo nome da branch em que você está trabalhando, como main ou master.
+
+ Seguindo esses passos, você conseguirá visualizar, adicionar, commitar e enviar para o GitHub todas as novas pastas e arquivos adicionados no repositório clonado.
 
 Esta plataforma foi desenvolvida para fornecer uma experiência simples e eficiente na recomendação e avaliação de filmes. Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para contribuir ou entrar em contato.
 

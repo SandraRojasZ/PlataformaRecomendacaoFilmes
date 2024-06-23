@@ -1,9 +1,7 @@
 <%  
 
-if(session.getAttribute("nome")==null){ 
-
-response.sendRedirect("login.jsp"); 
-
+if(session.getAttribute("name")==null){
+	response.sendRedirect("login.jsp"); 
 } 
 
 %> 
@@ -53,7 +51,9 @@ response.sendRedirect("login.jsp");
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="">Entrar</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Entrar</a></li>
+					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="entrar"><%=session.getAttribute("name")%></a></li>
 					
 				</ul>
 			</div>

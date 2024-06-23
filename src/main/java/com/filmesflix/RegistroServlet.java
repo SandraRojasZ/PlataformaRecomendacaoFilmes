@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -30,10 +31,11 @@ public class RegistroServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String senha = request.getParameter("pass");
 		RequestDispatcher dispatcher = null;
+		Connection con = null;
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql:localhost:3306/filmes","root","");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/filmes?useSSL=false","root","");
 			/*Colocar as mesmas colunas da tabela criada no mysql e na mesma ordem*/
 			PreparedStatement pst = con.prepareStatement("INSERT INTO usuario(nome, senha, email) VALUES(?,?,?)");
 			pst.setString(1, nome);
@@ -45,11 +47,21 @@ public class RegistroServlet extends HttpServlet {
 			dispatcher = request.getRequestDispatcher("registration.jsp");
 			
 			if(rowCount > 0) {
-				request.setAttribute("status", "sucess");
+				request.setAttribute("status", "success");
+			}else {
+				request.setAttribute("status", "failed");
 			}
 			
+			dispatcher.forward(request, response);
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 

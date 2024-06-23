@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
 
 	<div class="main">
 
@@ -30,13 +31,14 @@
 
 					<div class="signin-form">
 						<h2 class="form-title">Entrar</h2>
-						<form method="" action="" class="register-form"
+						<!-- Estará sendo chamado em LoginServlet em doPost-->
+						<form method="post" action="logins" class="register-form"
 							id="login-form">
 							<div class="form-group">
 								<label for="username"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="username" id="username"
-									placeholder="Seu nome" />
+									type="text" name="email" id="email"
+									placeholder="Seu email" />
 							</div>
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
@@ -75,6 +77,26 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	
+	<!--sweetalert é uma biblio JavaScript para criar alerta pop-up-->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
+
+	<script type="text/javascript">
+
+		<!--JavaScript obtém o valor do atributo "status" do campo oculto usando 
+		o método getElementById e armazena-o na variável status-->
+		
+		<!--Não está retornando a mensagem de erro!!-->
+		var status = document.getElementById("status").value;
+	    if(status == "failed"){
+	        swal("Sinto muito", "Email ou Senha Incorreto!", "error");
+	        document.getElementById("status").value = "";
+	    } else if(status == "error") {
+	        swal("Erro", "Ocorreu um erro no servidor. Por favor, tente novamente mais tarde.", "error");
+	    
+	</script>
+	
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

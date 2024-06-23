@@ -1,0 +1,39 @@
+Você foi contratado para desenvolver uma plataforma de recomendação de filmes. O sistema que você irá desenvolver deverá contar com os seguintes requisitos funcionais:
+
+ 1) Um usuário poderá realizar login no sistema; este usuário deve poder fazer cadastro e deverá possuir
+
+    a. Email;
+
+    b. Senha;
+
+    c. Nome;
+
+    *** O usuário que realizar cadastro não poderá cadastrar filmes
+
+ 2) Também deverá existir outro tipo de usuário, com perfil administrativo, já pré-cadastrado, que terá permissão para inserir filmes
+
+ 
+
+3) Filme poderão ser cadastrados, sendo que cada filme deverá ter
+
+     a. Título;
+
+     b. Diretor;
+
+     c. Gênero;
+
+ 
+
+4) Com o filme cadastrado, o usuário poderá buscar um filme informando seu título, gênero ou diretor, ou média (exemplo: média > 5 )
+
+ 
+
+5) Os usuários poderão avaliar um filme pré-cadastrado. Cada usuário pode avaliar um filme que já esteja cadastrado na plataforma. A avaliação poderá ser uma nota de 0 a 10
+
+ 
+
+6) Cada filme terá uma média definida pela soma de todas as notas e divisão pelo total de avaliações. Cada vez que um filme for avaliado, sua média deverá ser atualizada
+
+
+
+O sistema deverá ser desenvolvido em quartetos, com data de entrega em 27/06. A entrega consistirá do envio do código fonte via Moodle, além de apresentação e explicação do código fonte em sala de aula.

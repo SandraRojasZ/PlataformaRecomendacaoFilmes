@@ -23,8 +23,8 @@
 				<div class="signup-content">
 					<div class="signup-form">
 						<h2 class="form-title">Cadastro</h2>
-					
-						<form method="" action="" class="register-form"
+						<!-- Estará sendo chamado em RegistroServlet em doPost-->
+						<form method="post" action="register" class="register-form"
 							id="register-form">
 							<div class="form-group">
 								<label for="name"><i

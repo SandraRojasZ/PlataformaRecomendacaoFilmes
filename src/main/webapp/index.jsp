@@ -1,7 +1,12 @@
-/*
+<%  
 
-*/
+if(session.getAttribute("nome")==null){ 
 
+response.sendRedirect("login.jsp"); 
+
+} 
+
+%> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +15,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>Plataforma de Recomendação de filmes</title>
+<title>Filmes Flix</title>
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->

@@ -326,7 +326,7 @@ if(session.getAttribute("name")==null){
 				</div>
 				<!-- Footer Social Icons-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="text-uppercase mb-4">Around the Web</h4>
+					<h4 class="text-uppercase mb-4">Redes Sociais</h4>
 					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i
 						class="fab fa-fw fa-facebook-f"></i></a> <a
 						class="btn btn-outline-light btn-social mx-1" href="#!"><i
@@ -338,7 +338,7 @@ if(session.getAttribute("name")==null){
 				</div>
 				<!-- Footer About Text-->
 				<div class="col-lg-4">
-					<h4 class="text-uppercase mb-4">Sobre Filme Flix</h4>
+					<h4 class="text-uppercase mb-4">Sobre Filmes Flix</h4>
 					<p class="lead mb-0">
 						Freelance is a free to use, MIT licensed Bootstrap theme created
 						by <a href="http://startbootstrap.com">Start Bootstrap</a> .
@@ -350,7 +350,7 @@ if(session.getAttribute("name")==null){
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
-			<small>Copyright &copy; Your Website 2021</small>
+			<small>Copyright &copy; Your Website 2024</small>
 		</div>
 	</div>
 	<!-- Portfolio Modals-->

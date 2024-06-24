@@ -57,8 +57,15 @@ public class LoginServlet extends HttpServlet {
 			
 			try (ResultSet rs = pst.executeQuery()) {
                 if (rs.next()) {
-                    session.setAttribute("name", rs.getString("nome"));
-                    dispatcher = request.getRequestDispatcher("/index.jsp");
+                	session.setAttribute("name", rs.getString("nome"));
+
+                    String TipoUsuario = rs.getString("tipo_user"); // Assuming a "tipo" column for user type
+
+                    if ("admin".equals(TipoUsuario)) {
+                        dispatcher = request.getRequestDispatcher("/admin.jsp");
+                    } else {
+                        dispatcher = request.getRequestDispatcher("/user.jsp");
+                    }
                 } else {
                     request.setAttribute("status", "failed");
                     dispatcher = request.getRequestDispatcher("login.jsp");

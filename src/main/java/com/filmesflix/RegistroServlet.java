@@ -30,6 +30,7 @@ public class RegistroServlet extends HttpServlet {
 		String nome = request.getParameter("name");
 		String email = request.getParameter("email");
 		String senha = request.getParameter("pass");
+		String usuario = request.getParameter("usuario");
 		RequestDispatcher dispatcher = null;
 		Connection con = null;
 		
@@ -37,10 +38,11 @@ public class RegistroServlet extends HttpServlet {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/filmes?useSSL=false","root","");
 			/*Colocar as mesmas colunas da tabela criada no mysql e na mesma ordem*/
-			PreparedStatement pst = con.prepareStatement("INSERT INTO usuario(nome, senha, email) VALUES(?,?,?)");
+			PreparedStatement pst = con.prepareStatement("INSERT INTO usuario(nome, senha, email, tipo_user) VALUES(?,?,?,?)");
 			pst.setString(1, nome);
 			pst.setString(2, senha);
 			pst.setString(3, email);
+			pst.setString(4, usuario);
 			
 			int rowCount = pst.executeUpdate();
 			

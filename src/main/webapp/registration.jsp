@@ -47,6 +47,13 @@
 								<input type="password" name="re_pass" id="re_pass"
 									placeholder="Repita sua senha" />
 							</div>
+							<div class="form-group">
+								<label for="name"><i
+									class=""></i></label> 
+									<select name="usuario" id="usuario" disabled>   
+    									<option value="regular">usuario</option>
+  									</select>
+							</div>				
 							
 							<div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"

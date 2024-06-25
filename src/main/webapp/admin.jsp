@@ -47,7 +47,7 @@ if(session.getAttribute("name")==null){
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Ver Todos</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="AdicionarServlet">Adicionar Filmes</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a

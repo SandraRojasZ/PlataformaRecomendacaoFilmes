@@ -24,10 +24,10 @@ public class FilmesAdd extends HttpServlet{
 			String genero=req.getParameter("genero");
 			Part part=req.getPart("imagem");
 			String fileName=part.getSubmittedFileName();
-			
+			/*
 			Cad_Peli f = new Cad_Peli(titulo, diretor, genero, fileName, "admin");
 			System.out.println(f);
-			
+			*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

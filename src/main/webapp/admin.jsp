@@ -1,10 +1,9 @@
-<%  
 
-if(session.getAttribute("name")==null){
-	response.sendRedirect("login.jsp"); 
-} 
-
-%> 
+<%
+if (session.getAttribute("name") == null) {
+	response.sendRedirect("login.jsp");
+}
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,16 +44,18 @@ if(session.getAttribute("name")==null){
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Ver Todos</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Ver
+							Todos</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="AdicionarServlet">Adicionar Filmes</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="AdicionarServlet">Adicionar
+							Filmes</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Sair</a></li>
 					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="entrar"><%=session.getAttribute("name")%></a></li>
-					
+
 				</ul>
 			</div>
 		</div>
@@ -66,7 +67,8 @@ if(session.getAttribute("name")==null){
 			<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg"
 				alt="..." />
 			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Bem-Vindo a página com os melhores filmes</h1>
+			<h1 class="masthead-heading text-uppercase mb-0">Bem-Vindo a
+				página com os melhores filmes</h1>
 			<!-- Icon Divider-->
 			<div class="divider-custom divider-light">
 				<div class="divider-custom-line"></div>
@@ -76,8 +78,8 @@ if(session.getAttribute("name")==null){
 				<div class="divider-custom-line"></div>
 			</div>
 			<!-- Masthead Subheading-->
-			<p class="masthead-subheading font-weight-light mb-0">
-				Filmes - Seriados - Documentários</p>
+			<p class="masthead-subheading font-weight-light mb-0">Filmes -
+				Seriados - Documentários</p>
 		</div>
 	</header>
 	<!-- Portfolio Section-->
@@ -85,7 +87,8 @@ if(session.getAttribute("name")==null){
 		<div class="container">
 			<!-- Portfolio Section Heading-->
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Ver todos</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">Ver
+				todos</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -206,15 +209,17 @@ if(session.getAttribute("name")==null){
 			<!-- About Section Content-->
 			<div class="row">
 				<div class="col-lg-4 ms-auto">
-					<p class="lead">Freelancer is a free bootstrap theme created by
-						Start Bootstrap. The download includes the complete source files
-						including HTML, CSS, and JavaScript as well as optional SASS
-						stylesheets for easy customization.</p>
+					<p class="lead">A democratização dos filmes, seriados e
+						documentários permite que uma ampla gama de narrativas e vozes
+						seja acessível a todos, promovendo a inclusão cultural e a
+						diversidade de perspectivas em nossa sociedade.</p>
 				</div>
 				<div class="col-lg-4 me-auto">
-					<p class="lead">You can create your own custom avatar for the
-						masthead, change the icon in the dividers, and add your email
-						address to the contact form to make it fully functional!</p>
+					<p class="lead">Com a democratização do acesso a conteúdos
+						audiovisuais, mais pessoas podem desfrutar de entretenimento e
+						educação de qualidade, independentemente de suas condições
+						socioeconômicas, ampliando o horizonte cultural e o conhecimento
+						da população.</p>
 				</div>
 			</div>
 			<!-- About Section Button-->
@@ -257,14 +262,15 @@ if(session.getAttribute("name")==null){
 							<input class="form-control" id="name" type="text"
 								placeholder="Enter your name..." data-sb-validations="required" />
 							<label for="name">Nome Completo</label>
-							<div class="invalid-feedback" data-sb-feedback="name:required">O nome é requerido.</div>
+							<div class="invalid-feedback" data-sb-feedback="name:required">O
+								nome é requerido.</div>
 						</div>
 						<!-- Email address input-->
 						<div class="form-floating mb-3">
 							<input class="form-control" id="email" type="email"
 								placeholder="name@example.com"
 								data-sb-validations="required,email" /> <label for="email">Email
-								</label>
+							</label>
 							<div class="invalid-feedback" data-sb-feedback="email:required">
 								Email é requerido.</div>
 							<div class="invalid-feedback" data-sb-feedback="email:email">Email
@@ -275,7 +281,8 @@ if(session.getAttribute("name")==null){
 							<input class="form-control" id="phone" type="tel"
 								placeholder="(123) 456-7890" data-sb-validations="required" />
 							<label for="phone">Telefone</label>
-							<div class="invalid-feedback" data-sb-feedback="phone:required">O telefone é requerido.</div>
+							<div class="invalid-feedback" data-sb-feedback="phone:required">O
+								telefone é requerido.</div>
 						</div>
 						<!-- Message input-->
 						<div class="form-floating mb-3">

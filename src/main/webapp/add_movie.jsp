@@ -100,7 +100,7 @@
 						<figure>
 							<img src="images/signup-image.jpg" alt="sing up image">
 						</figure>						
-						<a action="admin.jsp" class="signup-image-link">Home</a>
+						<a href="admin.jsp" class="signup-image-link">Home</a>
 					</div>
 				</div>
 			</div>

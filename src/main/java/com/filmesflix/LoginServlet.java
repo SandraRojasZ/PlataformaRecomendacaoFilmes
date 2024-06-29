@@ -59,7 +59,7 @@ public class LoginServlet extends HttpServlet {
                 if (rs.next()) {
                 	session.setAttribute("name", rs.getString("nome"));
 
-                    String TipoUsuario = rs.getString("tipo_user"); // Assuming a "tipo" column for user type
+                    String TipoUsuario = rs.getString("tipo_user");
 
                     if ("admin".equals(TipoUsuario)) {
                         dispatcher = request.getRequestDispatcher("/admin.jsp");

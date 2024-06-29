@@ -100,7 +100,7 @@
 						<figure>
 							<img src="images/signup-image.jpg" alt="sing up image">
 						</figure>						
-						<a href="admin.jsp" class="signup-image-link">Home</a>
+						<a href="AdminHomeServlet" class="signup-image-link">Home</a>
 					</div>
 				</div>
 			</div>

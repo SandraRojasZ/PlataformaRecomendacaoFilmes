@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class EntrarServlet
+ *Essa anotação indica que o servlet está mapeado para a URL /AdminHomeServlet. 
+ *Quando o navegador ou outro cliente web acessa essa URL, o servidor chamará este servlet.
  */
 @WebServlet("/AdminHomeServlet")
 public class AdminHomeServlet extends HttpServlet {
@@ -22,7 +23,7 @@ public class AdminHomeServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		session.invalidate();
-		response.sendRedirect("admin.jsp");
+		response.sendRedirect("index.jsp");
 	}
 
 

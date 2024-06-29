@@ -66,6 +66,7 @@ public class CalculoAvalServlet extends HttpServlet {
             // SQL para atualizar a média da avaliação
             String updateSQL = "UPDATE cad_peli SET media = ? WHERE titulo = ?";
             PreparedStatement pst = con.prepareStatement(updateSQL);
+            
             pst.setDouble(1, filme.getMediaAvaliacoes());
             pst.setString(2, titulo);
 

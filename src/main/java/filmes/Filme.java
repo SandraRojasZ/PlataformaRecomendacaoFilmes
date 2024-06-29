@@ -6,23 +6,22 @@ public class Filme {
 	private double somaAvaliacoes;
 	private String diretor;
 	private String genero;
-	
 
 	public Filme(String titulo) {
-		this.titulo = titulo;		
+		this.titulo = titulo;
 		this.totalAvaliacoes = 0;
 		this.somaAvaliacoes = 0;
-		
+
 	}
-	
+
 	public Filme(String titulo, String diretor, String genero, Double media) {
 		super();
 		this.titulo = titulo;
 		this.diretor = diretor;
 		this.genero = genero;
-		//this.MediaAvaliacoes = media;
+		this.somaAvaliacoes = media * totalAvaliacoes;
 	}
-	
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -38,11 +37,19 @@ public class Filme {
 		return somaAvaliacoes / totalAvaliacoes;
 	}
 
+	public int getTotalAvaliacoes() {
+		return totalAvaliacoes;
+	}
+
+	public void setTotalAvaliacoes(int totalAvaliacoes) {
+		this.totalAvaliacoes = totalAvaliacoes;
+	}
+
 	public void adicionarAvaliacao(int nota) {
 		somaAvaliacoes += nota;
 		totalAvaliacoes++;
 	}
-	
+
 	public String getDiretor() {
 		return diretor;
 	}

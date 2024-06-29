@@ -74,7 +74,7 @@ body {
 		<div class="search-box">
 			<h2>Buscar Filmes</h2>
 
-			<form id="search-form"  method="post" action="busca.jsp"> 
+			<form id="search-form"  method="post" action="resul_busca.jsp"> 
 				<input type="text" id="search-query" name="buscar"
 					placeholder="Digite título, diretor ou gênero ou média da avaliação"
 					required>

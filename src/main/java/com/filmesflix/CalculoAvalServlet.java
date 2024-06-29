@@ -37,7 +37,6 @@ public class CalculoAvalServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String titulo = request.getParameter("titulo");
-
 		int nota = Integer.parseInt(request.getParameter("nota"));
 
 		Filme filme = filmes.get(titulo);
@@ -54,44 +53,46 @@ public class CalculoAvalServlet extends HttpServlet {
 		response.getWriter().println("<h1>Avaliação enviada com sucesso!</h1>");
 		response.getWriter().println("<p>Título: " + filme.getTitulo() + "</p>");
 		response.getWriter().println("<p>Média Atual: " + filme.getMediaAvaliacoes() + "</p>");
+		response.getWriter().println("<p>Quantidade de Avaliações: " + filme.getTotalAvaliacoes() + "</p>");
 		response.getWriter().println("</body></html>");
-				
+
 		RequestDispatcher dispatcher = null;
-        Connection con = null;
+		Connection con = null;
 
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/filmes?useSSL=false", "root", "");
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/filmes?useSSL=false", "root", "");
 
-            // SQL para atualizar a média da avaliação
-            String updateSQL = "UPDATE cad_peli SET media = ? WHERE titulo = ?";
-            PreparedStatement pst = con.prepareStatement(updateSQL);
-            
-            pst.setDouble(1, filme.getMediaAvaliacoes());
-            pst.setString(2, titulo);
+			// SQL para atualizar a média das avaliações e o Total de Avaliações 
+			String updateSQL = "UPDATE cad_peli SET media = ?, TotalAval = ? WHERE titulo = ?";
+			PreparedStatement pst = con.prepareStatement(updateSQL);
 
-            int rowCount = pst.executeUpdate();
+			pst.setDouble(1, filme.getMediaAvaliacoes());
+			pst.setInt(2, filme.getTotalAvaliacoes());
+			pst.setString(3, titulo);
 
-            dispatcher = request.getRequestDispatcher("avaliar.jsp");
+			int rowCount = pst.executeUpdate();
 
-            if (rowCount > 0) {
-                request.setAttribute("status", "success");               
-            } else {
-                request.setAttribute("status", "failed");
-            }
+			dispatcher = request.getRequestDispatcher("avaliar.jsp");
 
-            dispatcher.forward(request, response);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (con != null) {
-                try {
-                    con.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
+			if (rowCount > 0) {
+				request.setAttribute("status", "success");
+			} else {
+				request.setAttribute("status", "failed");
+			}
+
+			dispatcher.forward(request, response);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
 
 }

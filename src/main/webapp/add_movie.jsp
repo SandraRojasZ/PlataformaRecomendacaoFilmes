@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,10 +61,11 @@
 							</div>
 
 							<div class="form-group">
-								<label for="exampleFormControlFile1"> </label> <input
+								<label for="exampleFormControlFile1"> </label> <input 
 									type="file" name="fotoNome" class="form-control-file"
-									id="exampleFormControlFile1">
+									id="exampleFormControlFile1" >
 							</div>
+							
 
 							<div class="form-group">
 								<label for="exampleFormControlSelect1"></label> <select
@@ -92,15 +92,15 @@
 							</div>
 							<div class="form-group form-button">
 								<input type="submit" name="signup" id="signup"
-									class="form-submit" value="Adicionar" />
+									class="form-submit" style="background-color:#374d62" value="Adicionar" />
 							</div>
 						</form>
 					</div>
 					<div class="signup-image">
 						<figure>
-							<img src="images/signup-image.jpg" alt="sing up image">
+							<img src="images/garfieldimage.jpg" alt="sing up image">
 						</figure>						
-						<a href="AdminHomeServlet" class="signup-image-link">Home</a>
+						<a href="AdminHomeServlet" class="signup-image-link">Clique aqui para voltar para o home!</a>
 					</div>
 				</div>
 			</div>

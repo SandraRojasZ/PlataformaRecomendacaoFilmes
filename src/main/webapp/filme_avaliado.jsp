@@ -49,7 +49,7 @@ if (session.getAttribute("name") == null) {
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">HOME</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="AvaliarServlet">Nova Busca</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="AvaliarServlet">Avaliar</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#footer">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
@@ -64,7 +64,7 @@ if (session.getAttribute("name") == null) {
 		<h1 class="mb-4">Resultados da Busca</h1>
 		<div class="results">
 			<%
-			String searchQuery = request.getParameter("buscar");
+			String searchQuery = request.getParameter("titulo");
 			if (searchQuery != null && !searchQuery.trim().isEmpty()) {
 				try {
 					// Fazer a conexão com o Banco de Dados
@@ -74,13 +74,10 @@ if (session.getAttribute("name") == null) {
 					conecta = DriverManager.getConnection("jdbc:mysql://localhost:3306/filmes", "root", "");
 
 					// Listar os dados da tabela cad_peli do banco de dados
-					String sql = "SELECT titulo, diretor, genero, media FROM cad_peli WHERE titulo LIKE ? OR diretor LIKE ? OR genero LIKE ? OR media LIKE ?";
+					String sql = "SELECT titulo, diretor, genero, media FROM cad_peli WHERE titulo LIKE ?";
 					st = conecta.prepareStatement(sql);
 					String searchPattern = "%" + searchQuery + "%";
 					st.setString(1, searchPattern);
-					st.setString(2, searchPattern);
-					st.setString(3, searchPattern);
-					st.setString(4, searchPattern);
 
 					ResultSet rs = st.executeQuery();
 
@@ -93,8 +90,11 @@ if (session.getAttribute("name") == null) {
 			<div class="card mb-3">
 				<div class="card-body">
 					<h5 class="card-title">
+						Avaliação realizada com Sucesso!
+					</h5>
+					<p class="card-text">
 						Título:
-						<%=rs.getString("titulo")%></h5>
+						<%=rs.getString("titulo")%></p>
 					<p class="card-text">
 						Diretor:
 						<%=rs.getString("diretor")%></p>
@@ -140,15 +140,13 @@ if (session.getAttribute("name") == null) {
 	</div>
 
 	<!-- Footer-->
-	<footer class="footer text-center" id = footer >
+	<footer class="footer text-center" id=footer>
 		<div class="container">
 			<div class="row">
 				<!-- Footer Location-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Localização</h4>
-					<p class="lead mb-0">
-						Presente em todos os sofás quentinhos...
-					</p>
+					<p class="lead mb-0">Presente em todos os sofás quentinhos...</p>
 				</div>
 				<!-- Footer Social Icons-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
@@ -166,20 +164,21 @@ if (session.getAttribute("name") == null) {
 				<div class="col-lg-4">
 					<h4 class="text-uppercase mb-4">Sobre Filmes Flix</h4>
 					<p class="lead mb-0">
-						Descubra uma vasta coleção de filmes para assistir. Navegue por diferentes gêneros e encontre seu próximo filme favorito.</a>
+						Descubra uma vasta coleção de filmes para assistir. Navegue por
+						diferentes gêneros e encontre seu próximo filme favorito.</a>
 					</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
 			<small>Copyright &copy; Filmes Flix 2024</small>
 		</div>
 	</div>
-	
+
 	<!-- Core theme JavaScript (includes Bootstrap) -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script

@@ -52,7 +52,7 @@ if (session.getAttribute("name") == null) {
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Saiba Mais</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Sair</a></li>
 					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
@@ -62,15 +62,12 @@ if (session.getAttribute("name") == null) {
 			</div>
 		</div>
 	</nav>
-	<!-- Masthead-->
-	<header class="masthead bg-primary text-white text-center">
+		<!-- Masthead-->
+	<header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/cinema.jpg');">	<div class="container d-flex align-items-center flex-column">
 		<div class="container d-flex align-items-center flex-column">
-			<!-- Masthead Avatar Image-->
-			<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg"
-				alt="..." />
+			<!-- Masthead Avatar Image--> 
 			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Bem-Vindo a
-				página com os melhores filmes</h1>
+			<h1 class="masthead-heading text-uppercase mb-0">Descubra o melhor do cinema aqui!</h1>
 			<!-- Icon Divider-->
 			<div class="divider-custom divider-light">
 				<div class="divider-custom-line"></div>
@@ -80,8 +77,7 @@ if (session.getAttribute("name") == null) {
 				<div class="divider-custom-line"></div>
 			</div>
 			<!-- Masthead Subheading-->
-			<p class="masthead-subheading font-weight-light mb-0">Filmes -
-				Seriados - Documentários</p>
+			<p class="masthead-subheading font-weight-light mb-0">Seja você um cinéfilo ávido ou apenas alguém que não quer perder seu tempo assistindo a mais um filme genérico da Netflix, nossa plataforma é o seu guia definitivo para descobrir os melhores filmes para assistir!</p>
 		</div>
 	</header>
 	<!-- Portfolio Section-->
@@ -89,8 +85,7 @@ if (session.getAttribute("name") == null) {
 		<div class="container">
 			<!-- Portfolio Section Heading-->
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Ver
-				todos</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">Catálogo</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -101,7 +96,6 @@ if (session.getAttribute("name") == null) {
 			</div>
 			<!-- Portfolio Grid Items-->
 			<div class="row justify-content-center">
-
 				<!-- Portfolio Item 1-->
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
@@ -113,7 +107,7 @@ if (session.getAttribute("name") == null) {
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/madmen.jpg"
+						<img class="img-fluid" src="assets/img/portfolio/divertidamente.png"
 							alt="..." />
 					</div>
 				</div>
@@ -128,7 +122,7 @@ if (session.getAttribute("name") == null) {
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/office.jpg"
+						<img class="img-fluid" src="assets/img/portfolio/walle.png"
 							alt="..." />
 					</div>
 				</div>
@@ -143,7 +137,7 @@ if (session.getAttribute("name") == null) {
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/parasite.jpg"
+						<img class="img-fluid" src="assets/img/portfolio/westworld2_p7sq.png"
 							alt="..." />
 					</div>
 				</div>
@@ -158,7 +152,7 @@ if (session.getAttribute("name") == null) {
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/memento.png"
+						<img class="img-fluid" src="assets/img/portfolio/toystory.jpeg"
 							alt="..." />
 					</div>
 				</div>
@@ -173,7 +167,7 @@ if (session.getAttribute("name") == null) {
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/cor.jpg"
+						<img class="img-fluid" src="assets/img/portfolio/fallout-tv.jpg"
 							alt="..." />
 					</div>
 				</div>
@@ -188,7 +182,7 @@ if (session.getAttribute("name") == null) {
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/poderoso.jpg"
+						<img class="img-fluid" src="assets/img/portfolio/trabalhointerno.jpg"
 							alt="..." />
 					</div>
 				</div>
@@ -196,7 +190,7 @@ if (session.getAttribute("name") == null) {
 		</div>
 	</section>
 	<!-- About Section-->
-	<section class="page-section bg-primary text-white mb-0" id="about">
+	<section class="page-section bg-secondary text-white mb-0" id="about">
 		<div class="container">
 			<!-- About Section Heading-->
 			<h2
@@ -228,8 +222,8 @@ if (session.getAttribute("name") == null) {
 			<!-- About Section Button-->
 			<div class="text-center mt-4">
 				<a class="btn btn-xl btn-outline-light"
-					href="https://startbootstrap.com/theme/freelancer/"> <i
-					class="fas fa-download me-2"></i> Free Download!
+					href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.filmelier.com/br/assistir-filmes-online&ved=2ahUKEwigt4fb_PeGAxWVLbkGHUeQDCgQFnoECBgQAQ&usg=AOvVaw0vhqZ1ucMPkWNcwnItez2T"> <i
+					class="fas fa-download me-2"></i> Assista filmes online de graça!
 				</a>
 			</div>
 		</div>
@@ -237,10 +231,8 @@ if (session.getAttribute("name") == null) {
 	<!-- Contact Section-->
 	<section class="page-section" id="contact">
 		<div class="container">
-			<!-- Contact Section Heading-->
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Contate
-				Me</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">Saiba mais</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -249,80 +241,15 @@ if (session.getAttribute("name") == null) {
 				</div>
 				<div class="divider-custom-line"></div>
 			</div>
-			<!-- Contact Section Form-->
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-xl-7">
-					<!-- * * * * * * * * * * * * * * *-->
-					<!-- * * SB Forms Contact Form * *-->
-					<!-- * * * * * * * * * * * * * * *-->
-					<!-- This form is pre-integrated with SB Forms.-->
-					<!-- To make this form functional, sign up at-->
-					<!-- https://startbootstrap.com/solution/contact-forms-->
-					<!-- to get an API token!-->
-					<form id="contactForm" data-sb-form-api-token="API_TOKEN">
-						<!-- Name input-->
-						<div class="form-floating mb-3">
-							<input class="form-control" id="name" type="text"
-								placeholder="Enter your name..." data-sb-validations="required" />
-							<label for="name">Nome Completo</label>
-							<div class="invalid-feedback" data-sb-feedback="name:required">O
-								nome é requerido.</div>
-						</div>
-						<!-- Email address input-->
-						<div class="form-floating mb-3">
-							<input class="form-control" id="email" type="email"
-								placeholder="name@example.com"
-								data-sb-validations="required,email" /> <label for="email">Email
-							</label>
-							<div class="invalid-feedback" data-sb-feedback="email:required">
-								Email é requerido.</div>
-							<div class="invalid-feedback" data-sb-feedback="email:email">Email
-								não é válido.</div>
-						</div>
-						<!-- Phone number input-->
-						<div class="form-floating mb-3">
-							<input class="form-control" id="phone" type="tel"
-								placeholder="(123) 456-7890" data-sb-validations="required" />
-							<label for="phone">Telefone</label>
-							<div class="invalid-feedback" data-sb-feedback="phone:required">O
-								telefone é requerido.</div>
-						</div>
-						<!-- Message input-->
-						<div class="form-floating mb-3">
-							<textarea class="form-control" id="message" type="text"
-								placeholder="Enter your message here..." style="height: 10rem"
-								data-sb-validations="required"></textarea>
-							<label for="message">Messagem</label>
-							<div class="invalid-feedback" data-sb-feedback="message:required">A
-								messagem é requerida.</div>
-						</div>
-						<!-- Submit success message-->
-						<!---->
-						<!-- This is what your users will see when the form-->
-						<!-- has successfully submitted-->
-						<div class="d-none" id="submitSuccessMessage">
-							<div class="text-center mb-3">
-								<div class="fw-bolder">Form submission successful!</div>
-								To activate this form, sign up at <br /> <a
-									href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-							</div>
-						</div>
-						<!-- Submit error message-->
-						<!---->
-						<!-- This is what your users will see when there is-->
-						<!-- an error submitting the form-->
-						<div class="d-none" id="submitErrorMessage">
-							<div class="text-center text-danger mb-3">Error sending
-								message!</div>
-						</div>
-						<!-- Submit Button-->
-						<button class="btn btn-primary btn-xl disabled" id="submitButton"
-							type="submit">Enviar</button>
-					</form>
+					
+					<iframe width="800" height="515" src="https://www.youtube.com/embed/8bnHF2jq2EE?si=PlVRP0n7husGxCMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
+	
 	<!-- Footer-->
 	<footer class="footer text-center">
 		<div class="container">
@@ -331,7 +258,7 @@ if (session.getAttribute("name") == null) {
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Localização</h4>
 					<p class="lead mb-0">
-						2215 John Daniel Drive <br /> Clark, MO 65243
+						Presente em todos os sofás quentinhos...
 					</p>
 				</div>
 				<!-- Footer Social Icons-->
@@ -350,8 +277,7 @@ if (session.getAttribute("name") == null) {
 				<div class="col-lg-4">
 					<h4 class="text-uppercase mb-4">Sobre Filmes Flix</h4>
 					<p class="lead mb-0">
-						Freelance is a free to use, MIT licensed Bootstrap theme created
-						by <a href="http://startbootstrap.com">Start Bootstrap</a> .
+						Descubra uma vasta coleção de filmes para assistir. Navegue por diferentes gêneros e encontre seu próximo filme favorito.</a>
 					</p>
 				</div>
 			</div>
@@ -360,7 +286,7 @@ if (session.getAttribute("name") == null) {
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
-			<small>Copyright &copy; Your Website 2024</small>
+			<small>Copyright &copy; Filmes Flix 2024</small>
 		</div>
 	</div>
 	<!-- Portfolio Modals-->
@@ -379,8 +305,8 @@ if (session.getAttribute("name") == null) {
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Log
-									Cabin</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Divertidamente
+									</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -391,16 +317,13 @@ if (session.getAttribute("name") == null) {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/cabin.png" alt="..." />
+									src="assets/img/portfolio/divertidamente.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
+								<p class="mb-4">
+"Divertidamente" (Inside Out) é um filme de animação da Pixar que explora as complexidades das emoções humanas através da jornada de Riley, uma jovem que enfrenta mudanças significativas em sua vida familiar ao se mudar para uma nova cidade. O filme se passa principalmente na mente de Riley, onde suas emoções - Alegria, Tristeza, Medo, Raiva e Nojinho - são personificadas como personagens que influenciam suas ações e memórias.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
+									<i class="fas fa-times fa-fw"></i> Fechar
 								</button>
 							</div>
 						</div>
@@ -424,8 +347,7 @@ if (session.getAttribute("name") == null) {
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty
-									Cake</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">WALL-E</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -436,16 +358,12 @@ if (session.getAttribute("name") == null) {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/cake.png" alt="..." />
+									src="assets/img/portfolio/walle.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
+								<p class="mb-4"> Em um planeta Terra abandonado e coberto de lixo, um pequeno robô chamado WALL-E passa seus dias compactando resíduos. Quando conhece EVE, uma sonda enviada para procurar sinais de vida, WALL-E embarca em uma jornada cósmica que pode oferecer esperança para o futuro da humanidade.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
+									<i class="fas fa-times fa-fw"></i> Fechar
 								</button>
 							</div>
 						</div>
@@ -469,8 +387,7 @@ if (session.getAttribute("name") == null) {
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus
-									Tent</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Westworld</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -481,16 +398,12 @@ if (session.getAttribute("name") == null) {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/circus.png" alt="..." />
+									src="assets/img/portfolio/westworld2_p7sq.jpg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
+								<p class="mb-4">Em um parque temático futurista, os visitantes podem viver suas fantasias em um mundo habitado por androides ultra-realistas. Conforme as linhas entre realidade e simulacro se dissipam, questões sobre ética, consciência artificial e livre-arbítrio surgem, levando a consequências imprevisíveis.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
+									<i class="fas fa-times fa-fw"></i> Fechar
 								</button>
 							</div>
 						</div>
@@ -514,7 +427,7 @@ if (session.getAttribute("name") == null) {
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Toy Story</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -525,16 +438,12 @@ if (session.getAttribute("name") == null) {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/game.png" alt="..." />
+									src="assets/img/portfolio/toystory.jpeg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
+								<p class="mb-4">Este clássico da animação segue a vida dos brinquedos de Andy, especialmente Woody o caubói e Buzz Lightyear o astronauta. Eles enfrentam desafios emocionais e aventuras loucas quando são confrontados com mudanças em suas vidas devido a novos brinquedos e situações inesperadas.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
+									<i class="fas fa-times fa-fw"></i> Fechar
 								</button>
 							</div>
 						</div>
@@ -558,8 +467,7 @@ if (session.getAttribute("name") == null) {
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked
-									Safe</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Fallout</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -570,16 +478,12 @@ if (session.getAttribute("name") == null) {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/safe.png" alt="..." />
+									src="assets/img/portfolio/fallout-tv.jpg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
+								<p class="mb-4">Situado em um mundo pós-apocalíptico devastado pela guerra nuclear, Fallout segue a jornada de sobreviventes que exploram terras desoladas, enfrentam criaturas mutantes e lutam contra facções em busca de recursos escassos, enquanto tentam reconstruir a civilização.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
+									<i class="fas fa-times fa-fw"></i> Fechar
 								</button>
 							</div>
 						</div>
@@ -603,7 +507,7 @@ if (session.getAttribute("name") == null) {
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabalho Interno</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -614,16 +518,12 @@ if (session.getAttribute("name") == null) {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/submarine.png" alt="..." />
+									src="assets/img/portfolio/trabalhointerno.jpg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
+								<p class="mb-4">Baseado em eventos reais, este filme explora a crise financeira global de 2008, revelando os bastidores obscuros do mercado imobiliário e financeiro dos EUA. Um grupo de investidores percebe o colapso iminente e decide lucrar com a crise, revelando a ganância e a irresponsabilidade que levaram ao colapso econômico.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
+									<i class="fas fa-times fa-fw"></i> Fechar
 								</button>
 							</div>
 						</div>

@@ -24,9 +24,9 @@
 				<div class="signin-content">
 					<div class="signin-image">
 						<figure>
-							<img src="images/signin-image.jpg" alt="sing up image">
+							<img src="images/loginimage.png" alt="sing up image">
 						</figure>
-						<a href="registration.jsp" class="signup-image-link">Criar Conta</a>
+						<a href="registration.jsp" class="signup-image-link">Ainda não tem conta? Clique aqui!</a>
 					</div>
 
 					<div class="signin-form">
@@ -48,16 +48,15 @@
 							<div class="form-group">
 								<input type="checkbox" name="remember-me" id="remember-me"
 									class="agree-term" /> <label for="remember-me"
-									class="label-agree-term"><span><span></span></span>Lembre
-									me</label>
+									class="label-agree-term"><span><span></span></span>Lembre-me</label>
 							</div>
 							<div class="form-group form-button">
 								<input type="submit" name="signin" id="signin"
-									class="form-submit" value="Log in" />
+									class="form-submit" style="background-color:#374d62" value="Login" />
 							</div>
 						</form>
 						<div class="social-login">
-							<span class="social-label">ou login com</span>
+							<span class="social-label">ou logue com:</span>
 							<ul class="socials">
 								<li><a href="#"><i
 										class="display-flex-center zmdi zmdi-facebook"></i></a></li>

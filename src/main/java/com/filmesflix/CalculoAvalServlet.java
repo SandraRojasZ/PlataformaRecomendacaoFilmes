@@ -73,7 +73,7 @@ public class CalculoAvalServlet extends HttpServlet {
 
 			int rowCount = pst.executeUpdate();
 
-			dispatcher = request.getRequestDispatcher("avaliar.jsp");
+			dispatcher = request.getRequestDispatcher("filme_avaliado.jsp");
 
 			if (rowCount > 0) {
 				request.setAttribute("status", "success");

@@ -48,13 +48,8 @@
 									placeholder="Repita sua senha" />
 							</div>
 							<div class="form-group">
-								<label for="name"><i
-									class=""></i></label> 
-									<select name="usuario" id="usuario" disabled>   
-    									<option value="regular">usuario</option>
-  									</select>
+  									<button type="button" name="usuario" id="usuario" class="btn btn-info btn-rounded shadow-sm" style="background: linear-gradient(to right, #6dabe4, #247ccd); border-color: #4e73df; color: #fff;">Usuário</button>
 							</div>				
-							
 							<div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
 									class="agree-term" /> <label for="agree-term"
@@ -70,7 +65,7 @@
 					</div>
 					<div class="signup-image">
 						<figure>
-							<img src="images/signup-image.jpg" alt="sing up image">
+							<img src="images/inside-out-emotions.png" alt="sing up image">
 						</figure>
 						<a href="login.jsp" class="signup-image-link">Eu tenho
 							cadastro</a>

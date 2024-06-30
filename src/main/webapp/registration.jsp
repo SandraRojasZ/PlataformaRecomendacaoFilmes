@@ -15,8 +15,9 @@
 </head>
 <body>
 
-<!--Em ResitroServlet se terá o status sucesso ou falha -->
-<input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
+	<!--Em ResitroServlet se terá o status sucesso ou falha -->
+	<input type="hidden" id="status"
+		value="<%=request.getAttribute("status")%>">
 
 	<div class="main">
 
@@ -47,9 +48,7 @@
 								<input type="password" name="re_pass" id="re_pass"
 									placeholder="Repita sua senha" />
 							</div>
-							<div class="form-group">
-  									<button type="button" name="usuario" id="usuario" class="btn btn-info btn-rounded shadow-sm" style="background: linear-gradient(to right, #6dabe4, #247ccd); border-color: #4e73df; color: #fff;">Usuário</button>
-							</div>				
+
 							<div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
 									class="agree-term" /> <label for="agree-term"
@@ -59,7 +58,8 @@
 							</div>
 							<div class="form-group form-button">
 								<input type="submit" name="signup" id="signup"
-									class="form-submit" value="Registrar-me" />
+									class="form-submit" style="background-color: #374d62"
+									value="Registrar-me" />
 							</div>
 						</form>
 					</div>
@@ -68,7 +68,8 @@
 							<img src="images/inside-out-emotions.png" alt="sing up image">
 						</figure>
 						<a href="login.jsp" class="signup-image-link">Eu tenho
-							cadastro</a>
+							cadastro</a><br> <a href="index.jsp" class="signup-image-link">Retornar
+							a página inicial</a>
 					</div>
 				</div>
 			</div>
@@ -79,18 +80,16 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-	
+
 	<!--sweetalert é uma biblio JavaScript para criar alerta pop-up-->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" href="alert/dist/sweetalert.css">
 
 	<script type="text/javascript">
-	
 		var status = document.getElementById("status").value;
-		if(status == "success"){
+		if (status == "success") {
 			swal("Parabéns", "Conta Registrada com Sucesso!", "success");
 		}
-	
 	</script>
 
 </body>

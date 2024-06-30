@@ -45,32 +45,42 @@
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Saiba Mais</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Saiba
+							Mais</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="registration.jsp">Cadastrar-me</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Entrar</a></li>
-					
+
 
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<!-- Masthead-->
-	<header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/cinema.jpg');">	<div class="container d-flex align-items-center flex-column">
+	<header class="masthead bg-primary text-white text-center"
+		style="background-image: url('assets/img/cinema.jpg');">
 		<div class="container d-flex align-items-center flex-column">
-			<!-- Masthead Avatar Image-->
-			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Descubra o melhor do cinema aqui!</h1>
-			<!-- Icon Divider-->
-			<div class="divider-custom divider-light">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
+			<div class="container d-flex align-items-center flex-column">
+				<!-- Masthead Avatar Image-->
+				<!-- Masthead Heading-->
+				<h1 class="masthead-heading text-uppercase mb-0">Descubra o
+					melhor do cinema aqui!</h1>
+				<!-- Icon Divider-->
+				<div class="divider-custom divider-light">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+						<i class="fas fa-star"></i>
+					</div>
+					<div class="divider-custom-line"></div>
 				</div>
-				<div class="divider-custom-line"></div>
+				<!-- Masthead Subheading-->
+				<p class="masthead-subheading font-weight-light mb-0">Seja você
+					um cinéfilo ávido ou apenas alguém que não quer perder seu tempo
+					assistindo a mais um filme genérico da Netflix, nossa plataforma é
+					o seu guia definitivo para descobrir os melhores filmes para
+					assistir!</p>
 			</div>
-			<!-- Masthead Subheading-->
-			<p class="masthead-subheading font-weight-light mb-0">Seja você um cinéfilo ávido ou apenas alguém que não quer perder seu tempo assistindo a mais um filme genérico da Netflix, nossa plataforma é o seu guia definitivo para descobrir os melhores filmes para assistir!</p>
-		</div>
 	</header>
 	<!-- Portfolio Section-->
 	<section class="page-section portfolio" id="portfolio">
@@ -99,8 +109,8 @@
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/divertidamente.png"
-							alt="..." />
+						<img class="img-fluid"
+							src="assets/img/portfolio/divertidamente.png" alt="..." />
 					</div>
 				</div>
 				<!-- Portfolio Item 2-->
@@ -129,8 +139,8 @@
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/westworld2_p7sq.png"
-							alt="..." />
+						<img class="img-fluid"
+							src="assets/img/portfolio/westworld2_p7sq.png" alt="..." />
 					</div>
 				</div>
 				<!-- Portfolio Item 4-->
@@ -174,8 +184,8 @@
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-fluid" src="assets/img/portfolio/trabalhointerno.jpg"
-							alt="..." />
+						<img class="img-fluid"
+							src="assets/img/portfolio/trabalhointerno.jpg" alt="..." />
 					</div>
 				</div>
 			</div>
@@ -214,8 +224,9 @@
 			<!-- About Section Button-->
 			<div class="text-center mt-4">
 				<a class="btn btn-xl btn-outline-light"
-					href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.filmelier.com/br/assistir-filmes-online&ved=2ahUKEwigt4fb_PeGAxWVLbkGHUeQDCgQFnoECBgQAQ&usg=AOvVaw0vhqZ1ucMPkWNcwnItez2T"> <i
-					class="fas fa-download me-2"></i> Assista filmes online de graça!
+					href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.filmelier.com/br/assistir-filmes-online&ved=2ahUKEwigt4fb_PeGAxWVLbkGHUeQDCgQFnoECBgQAQ&usg=AOvVaw0vhqZ1ucMPkWNcwnItez2T">
+					<i class="fas fa-download me-2"></i> Assista filmes online de
+					graça!
 				</a>
 			</div>
 		</div>
@@ -224,7 +235,8 @@
 	<section class="page-section" id="contact">
 		<div class="container">
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Saiba mais</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">Saiba
+				mais</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -235,13 +247,17 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-xl-7">
-					
-					<iframe width="800" height="515" src="https://www.youtube.com/embed/8bnHF2jq2EE?si=PlVRP0n7husGxCMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+					<iframe width="800" height="515"
+						src="https://www.youtube.com/embed/8bnHF2jq2EE?si=PlVRP0n7husGxCMm"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Footer-->
 	<footer class="footer text-center">
 		<div class="container">
@@ -249,9 +265,7 @@
 				<!-- Footer Location-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Localização</h4>
-					<p class="lead mb-0">
-						Presente em todos os sofás quentinhos...
-					</p>
+					<p class="lead mb-0">Presente em todos os sofás quentinhos...</p>
 				</div>
 				<!-- Footer Social Icons-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
@@ -269,7 +283,8 @@
 				<div class="col-lg-4">
 					<h4 class="text-uppercase mb-4">Sobre Filmes Flix</h4>
 					<p class="lead mb-0">
-						Descubra uma vasta coleção de filmes para assistir. Navegue por diferentes gêneros e encontre seu próximo filme favorito.</a>
+						Descubra uma vasta coleção de filmes para assistir. Navegue por
+						diferentes gêneros e encontre seu próximo filme favorito.</a>
 					</p>
 				</div>
 			</div>
@@ -298,7 +313,7 @@
 								<!-- Portfolio Modal - Title-->
 								<h2
 									class="portfolio-modal-title text-secondary text-uppercase mb-0">Divertidamente
-									</h2>
+								</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -311,8 +326,14 @@
 								<img class="img-fluid rounded mb-5"
 									src="assets/img/portfolio/divertidamente.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">
-"Divertidamente" (Inside Out) é um filme de animação da Pixar que explora as complexidades das emoções humanas através da jornada de Riley, uma jovem que enfrenta mudanças significativas em sua vida familiar ao se mudar para uma nova cidade. O filme se passa principalmente na mente de Riley, onde suas emoções - Alegria, Tristeza, Medo, Raiva e Nojinho - são personificadas como personagens que influenciam suas ações e memórias.</p>
+								<p class="mb-4">"Divertidamente" (Inside Out) é um filme de
+									animação da Pixar que explora as complexidades das emoções
+									humanas através da jornada de Riley, uma jovem que enfrenta
+									mudanças significativas em sua vida familiar ao se mudar para
+									uma nova cidade. O filme se passa principalmente na mente de
+									Riley, onde suas emoções - Alegria, Tristeza, Medo, Raiva e
+									Nojinho - são personificadas como personagens que influenciam
+									suas ações e memórias.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
 									<i class="fas fa-times fa-fw"></i> Fechar
@@ -352,7 +373,12 @@
 								<img class="img-fluid rounded mb-5"
 									src="assets/img/portfolio/walle.png" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4"> Em um planeta Terra abandonado e coberto de lixo, um pequeno robô chamado WALL-E passa seus dias compactando resíduos. Quando conhece EVE, uma sonda enviada para procurar sinais de vida, WALL-E embarca em uma jornada cósmica que pode oferecer esperança para o futuro da humanidade.</p>
+								<p class="mb-4">Em um planeta Terra abandonado e coberto de
+									lixo, um pequeno robô chamado WALL-E passa seus dias
+									compactando resíduos. Quando conhece EVE, uma sonda enviada
+									para procurar sinais de vida, WALL-E embarca em uma jornada
+									cósmica que pode oferecer esperança para o futuro da
+									humanidade.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
 									<i class="fas fa-times fa-fw"></i> Fechar
@@ -392,7 +418,12 @@
 								<img class="img-fluid rounded mb-5"
 									src="assets/img/portfolio/westworld2_p7sq.jpg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Em um parque temático futurista, os visitantes podem viver suas fantasias em um mundo habitado por androides ultra-realistas. Conforme as linhas entre realidade e simulacro se dissipam, questões sobre ética, consciência artificial e livre-arbítrio surgem, levando a consequências imprevisíveis.</p>
+								<p class="mb-4">Em um parque temático futurista, os
+									visitantes podem viver suas fantasias em um mundo habitado por
+									androides ultra-realistas. Conforme as linhas entre realidade e
+									simulacro se dissipam, questões sobre ética, consciência
+									artificial e livre-arbítrio surgem, levando a consequências
+									imprevisíveis.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
 									<i class="fas fa-times fa-fw"></i> Fechar
@@ -419,7 +450,8 @@
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Toy Story</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Toy
+									Story</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -432,7 +464,11 @@
 								<img class="img-fluid rounded mb-5"
 									src="assets/img/portfolio/toystory.jpeg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Este clássico da animação segue a vida dos brinquedos de Andy, especialmente Woody o caubói e Buzz Lightyear o astronauta. Eles enfrentam desafios emocionais e aventuras loucas quando são confrontados com mudanças em suas vidas devido a novos brinquedos e situações inesperadas.</p>
+								<p class="mb-4">Este clássico da animação segue a vida dos
+									brinquedos de Andy, especialmente Woody o caubói e Buzz
+									Lightyear o astronauta. Eles enfrentam desafios emocionais e
+									aventuras loucas quando são confrontados com mudanças em suas
+									vidas devido a novos brinquedos e situações inesperadas.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
 									<i class="fas fa-times fa-fw"></i> Fechar
@@ -472,7 +508,11 @@
 								<img class="img-fluid rounded mb-5"
 									src="assets/img/portfolio/fallout-tv.jpg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Situado em um mundo pós-apocalíptico devastado pela guerra nuclear, Fallout segue a jornada de sobreviventes que exploram terras desoladas, enfrentam criaturas mutantes e lutam contra facções em busca de recursos escassos, enquanto tentam reconstruir a civilização.</p>
+								<p class="mb-4">Situado em um mundo pós-apocalíptico
+									devastado pela guerra nuclear, Fallout segue a jornada de
+									sobreviventes que exploram terras desoladas, enfrentam
+									criaturas mutantes e lutam contra facções em busca de recursos
+									escassos, enquanto tentam reconstruir a civilização.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
 									<i class="fas fa-times fa-fw"></i> Fechar
@@ -499,7 +539,8 @@
 							<div class="col-lg-8">
 								<!-- Portfolio Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabalho Interno</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabalho
+									Interno</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -512,7 +553,12 @@
 								<img class="img-fluid rounded mb-5"
 									src="assets/img/portfolio/trabalhointerno.jpg" alt="..." />
 								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Baseado em eventos reais, este filme explora a crise financeira global de 2008, revelando os bastidores obscuros do mercado imobiliário e financeiro dos EUA. Um grupo de investidores percebe o colapso iminente e decide lucrar com a crise, revelando a ganância e a irresponsabilidade que levaram ao colapso econômico.</p>
+								<p class="mb-4">Baseado em eventos reais, este filme explora
+									a crise financeira global de 2008, revelando os bastidores
+									obscuros do mercado imobiliário e financeiro dos EUA. Um grupo
+									de investidores percebe o colapso iminente e decide lucrar com
+									a crise, revelando a ganância e a irresponsabilidade que
+									levaram ao colapso econômico.</p>
 								<button class="btn btn-primary" href="#!"
 									data-bs-dismiss="modal">
 									<i class="fas fa-times fa-fw"></i> Fechar

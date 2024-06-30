@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +16,37 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
 
 	<div class="main">
+		<%
+		if (request.getAttribute("status") != null) {
+		%>
+		<%
+		if (request.getAttribute("status").equals("email_exists")) {
+		%>
+		<div class="container">
+			<div class="signin-form">
+				<div class="alert alert-danger">Usuário indicado já possui
+					Cadastro! Por favor, faça login.</div>
+			</div>
+		</div>
+		<%
+		}
+		if (request.getAttribute("status").equals("failed")) {
+		%>
+		<div class="container">
+			<div class="signin-form">
+				<div class="alert alert-danger">Usuário ou senha incorretos!
+					Por favor, tente novamente.</div>
+			</div>
+		</div>
+		<%
+		}
+		%>
+		<%
+		}
+		%>
+		<br>
 
 		<!-- Sing in  Form -->
 		<section class="sign-in">
@@ -26,7 +56,10 @@
 						<figure>
 							<img src="images/loginimage.png" alt="sing up image">
 						</figure>
-						<a href="registration.jsp" class="signup-image-link">Ainda não tem conta? Clique aqui!</a>
+						<a href="registration.jsp" class="signup-image-link">Ainda não
+							tem conta? Clique aqui!</a> <br> <a href="index.jsp"
+							class="signup-image-link">Retornar a página inicial</a>
+
 					</div>
 
 					<div class="signin-form">
@@ -37,8 +70,7 @@
 							<div class="form-group">
 								<label for="username"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="email" id="email"
-									placeholder="Seu email" />
+									type="text" name="email" id="email" placeholder="Seu email" />
 							</div>
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
@@ -52,11 +84,12 @@
 							</div>
 							<div class="form-group form-button">
 								<input type="submit" name="signin" id="signin"
-									class="form-submit" style="background-color:#374d62" value="Login" />
+									class="form-submit" style="background-color: #374d62"
+									value="Login" />
 							</div>
 						</form>
 						<div class="social-login">
-							<span class="social-label">ou logue com:</span>
+							<span class="social-label">ou faça login com:</span>
 							<ul class="socials">
 								<li><a href="#"><i
 										class="display-flex-center zmdi zmdi-facebook"></i></a></li>
@@ -76,26 +109,13 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-	
+
 	<!--sweetalert é uma biblio JavaScript para criar alerta pop-up-->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" href="alert/dist/sweetalert.css">
 
-	<script type="text/javascript">
 
-		<!--JavaScript obtém o valor do atributo "status" do campo oculto usando 
-		o método getElementById e armazena-o na variável status-->
-		
-		<!--Não está retornando a mensagem de erro!!-->
-		var status = document.getElementById("status").value;
-	    if(status == "failed"){
-	        swal("Sinto muito", "Email ou Senha Incorreto!", "error");
-	        document.getElementById("status").value = "";
-	    } else if(status == "error") {
-	        swal("Erro", "Ocorreu um erro no servidor. Por favor, tente novamente mais tarde.", "error");
-	    
-	</script>
-	
+
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

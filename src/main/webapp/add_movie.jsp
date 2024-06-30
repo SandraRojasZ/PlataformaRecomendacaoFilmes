@@ -45,6 +45,7 @@
 				<div class="signup-content">
 					<div class="signup-form">
 						<h2 class="form-title">Adicionar Filmes</h2>
+						
 						<!-- Estará sendo chamado em AddMovieServlet em doPost-->
 						<form method="post" action="AddMovieServlet" class="register-form"
 							id="register-form">
@@ -100,7 +101,7 @@
 						<figure>
 							<img src="images/garfieldimage.jpg" alt="sing up image">
 						</figure>						
-						<a href="AdminHomeServlet" class="signup-image-link">Clique aqui para voltar para o home!</a>
+						<a href="index.html" class="signup-image-link">Clique aqui para voltar para o home!</a>
 					</div>
 				</div>
 			</div>

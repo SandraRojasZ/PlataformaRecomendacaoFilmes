@@ -48,13 +48,13 @@ if (session.getAttribute("name") == null) {
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Ver
 							Todos</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="AvaliarServlet">Avaliar</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="avaliar.jsp">Avaliar</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Saiba Mais</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Sair</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="login.jsp">Sair</a></li>
 					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="entrar"><%=session.getAttribute("name")%></a></li>
 

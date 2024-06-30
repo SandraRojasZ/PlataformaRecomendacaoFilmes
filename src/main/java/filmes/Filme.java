@@ -1,12 +1,14 @@
 package filmes;
 
 public class Filme {
+	//private: Indica que só pode ser acessada diretamente pela classe Filme.
 	private String titulo;
 	private int totalAvaliacoes;
 	private double somaAvaliacoes;
 	private String diretor;
 	private String genero;
 
+	// Construtor
 	public Filme(String titulo) {
 		this.titulo = titulo;
 		this.totalAvaliacoes = 0;
@@ -14,6 +16,7 @@ public class Filme {
 
 	}
 
+	// Outro Construtor com informações adicionais
 	public Filme(String titulo, String diretor, String genero, Double media) {
 		super();
 		this.titulo = titulo;
@@ -22,6 +25,10 @@ public class Filme {
 		this.somaAvaliacoes = media * totalAvaliacoes;
 	}
 
+	/** Métodos 
+	 * Get: Permite acessar o valor da propriedade
+	 * Set: Permite alterar o valor da propriedade  
+	**/
 	public String getTitulo() {
 		return titulo;
 	}

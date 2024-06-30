@@ -47,13 +47,13 @@ if (session.getAttribute("name") == null) {
 				<ul class="navbar-nav ms-auto">
 
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">HOME</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">HOME</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="AvaliarServlet">Nova Busca</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="avaliar.jsp">Nova Busca</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#footer">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Sair</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="login.jsp">Sair</a></li>
 
 				</ul>
 			</div>

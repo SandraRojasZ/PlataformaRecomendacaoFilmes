@@ -68,6 +68,7 @@ public class LoginServlet extends HttpServlet {
                     }
                 } else {
                     request.setAttribute("status", "failed");
+                    // se falhar enviará uma msg em login.jsp e continuará na página login.jsp
                     dispatcher = request.getRequestDispatcher("login.jsp");
                 }
             }

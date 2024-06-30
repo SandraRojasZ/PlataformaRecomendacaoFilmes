@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -31,14 +30,14 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">Home</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="AvaliarServlet">Avaliar</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="avaliar.jsp">Avaliar</a></li>
 
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#footer">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="EntrarServlet">Sair</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="login.jsp">Sair</a></li>
 
 
 				</ul>
@@ -49,6 +48,7 @@
 
 	<!-- Main Content -->
 	<div class="container mt-5 pt-5">
+	
 		<!-- Formulário de Busca -->
 		<div class="search-box p-4 bg-light rounded shadow-sm">
 			<h2 class="text-center">Buscar Filmes</h2>
@@ -103,7 +103,7 @@
 	<!--sweetalert é uma biblio JavaScript para criar alerta pop-up-->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" href="alert/dist/sweetalert.css">
-	
+
 	<script type="text/javascript">
 		var status = document.getElementById("status").value;
 		if (status == "success") {

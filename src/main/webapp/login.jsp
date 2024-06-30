@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,7 @@
 		if (request.getAttribute("status") != null) {
 		%>
 		<%
+		//Verificará se o email pelo status em RegistroServlet já está cadastrado
 		if (request.getAttribute("status").equals("email_exists")) {
 		%>
 		<div class="container">
@@ -32,6 +33,7 @@
 		</div>
 		<%
 		}
+		// Se ao conectar em LoginServlet.java falhar indicará a mensagem
 		if (request.getAttribute("status").equals("failed")) {
 		%>
 		<div class="container">
@@ -57,7 +59,7 @@
 							<img src="images/loginimage.png" alt="sing up image">
 						</figure>
 						<a href="registration.jsp" class="signup-image-link">Ainda não
-							tem conta? Clique aqui!</a> <br> <a href="index.jsp"
+							tem conta? Clique aqui!</a> <br> <a href="index.html"
 							class="signup-image-link">Retornar a página inicial</a>
 
 					</div>

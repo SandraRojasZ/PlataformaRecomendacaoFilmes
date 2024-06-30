@@ -27,7 +27,10 @@
 				<div class="signup-content">
 					<div class="signup-form">
 						<h2 class="form-title">Cadastro</h2>
-						<!-- Estará sendo chamado em RegistroServlet em doPost-->
+						
+						<!-- Estará sendo chamado em RegistroServlet em doPost
+							Método usado é POST
+						-->
 						<form method="post" action="register" class="register-form"
 							id="register-form">
 							<div class="form-group">
@@ -68,7 +71,7 @@
 							<img src="images/inside-out-emotions.png" alt="sing up image">
 						</figure>
 						<a href="login.jsp" class="signup-image-link">Eu tenho
-							cadastro</a><br> <a href="index.jsp" class="signup-image-link">Retornar
+							cadastro</a><br> <a href="index.html" class="signup-image-link">Retornar
 							a página inicial</a>
 					</div>
 				</div>
